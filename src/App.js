@@ -8,8 +8,13 @@ const App = () => {
       <h4>Welcome to E-Commerce</h4>
       <BrowserRouter>
         <Routes>
-          <Route strict exact path="/categories" element={CategoryList} />
-          <Route strict exact path="/categories/create" element={CategoryAdd} />
+          <Route strict exact path="/categories" element={<CategoryList />} />
+          <Route
+            strict
+            exact
+            path="/categories/create"
+            element={<CategoryAdd />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
