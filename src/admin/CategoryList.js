@@ -19,12 +19,13 @@ const CategoryList = () => {
   return (
     <div>
       <h2>Category List</h2>
-      {console.log(data)}
+      {/* {console.log(data)} */}
       {data.categories.map((category) => {
         return (
-          <div>
-            <div>{category.name}</div>
-            <div>{category.id}</div>
+          <div key={category.id}>
+            <div>
+              {category.id} | {category.name}
+            </div>
           </div>
         )
       })}
