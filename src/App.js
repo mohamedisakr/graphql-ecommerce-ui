@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import CategoryAdd from "./admin/CategoryAdd"
 import CategoryList from "./admin/CategoryList"
+import ProductList from "./components/ProductList"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
             path="/categories/create"
             element={<CategoryAdd />}
           />
+          <Route strict exact path="/products" element={<ProductList />} />
         </Routes>
       </BrowserRouter>
     </div>
