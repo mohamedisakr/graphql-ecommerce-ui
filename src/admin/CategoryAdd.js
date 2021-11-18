@@ -37,12 +37,12 @@ const CategoryAdd = () => {
     setSuccess(false)
     // call api mutation function
     createCategory({variables: {name}})
+    setName("")
     toast(`Category ${name} created successfully.`, {
       position: toast.POSITION.TOP_LEFT,
       className: "success-toast",
       draggable: true,
     })
-    setName("")
   }
 
   const categoryAddForm = () => {
